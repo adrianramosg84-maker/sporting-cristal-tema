@@ -1,92 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/celeste_sc">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#00AEEF"
+    android:padding="32dp">
 
-    <!-- Círculos decorativos de fondo -->
-    <View android:layout_width="600dp" android:layout_height="600dp"
-        android:layout_gravity="center"
-        android:background="@drawable/circle_ring_lg"/>
-    <View android:layout_width="400dp" android:layout_height="400dp"
-        android:layout_gravity="center"
-        android:background="@drawable/circle_ring_sm"/>
+    <TextView
+        android:id="@+id/splash_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★   ★   ★"
+        android:textSize="32sp"
+        android:textColor="#FFD700"
+        android:layout_marginBottom="16dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="32dp">
+    <ImageView
+        android:id="@+id/splash_shield"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/escudo_sc"
+        android:scaleType="fitCenter"/>
 
-        <!-- Estrellas -->
-        <TextView
-            android:id="@+id/splash_stars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="★   ★   ★"
-            android:textSize="32sp"
-            android:textColor="@color/dorado"
-            android:layout_marginBottom="16dp"
-            android:shadowColor="#7a5c00"
-            android:shadowDx="2" android:shadowDy="2" android:shadowRadius="3"/>
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPORTING CRISTAL"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:layout_marginTop="24dp"/>
 
-        <!-- Escudo -->
-        <ImageView
-            android:id="@+id/splash_shield"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/escudo_sc"
-            android:scaleType="fitCenter"
-            android:elevation="8dp"/>
+    <TextView
+        android:id="@+id/splash_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LA RAZA CELESTE"
+        android:textSize="14sp"
+        android:textColor="#CCFFFFFF"
+        android:layout_marginTop="8dp"/>
 
-        <!-- Nombre del club -->
-        <TextView
-            android:id="@+id/splash_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SPORTING CRISTAL"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/dorado"
-            android:fontFamily="serif"
-            android:letterSpacing="0.1"
-            android:layout_marginTop="24dp"
-            android:shadowColor="#7a5c00"
-            android:shadowDx="2" android:shadowDy="2" android:shadowRadius="4"/>
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#FFD700"/>
 
-        <!-- Subtítulo -->
-        <TextView
-            android:id="@+id/splash_subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LA RAZA CELESTE"
-            android:textSize="14sp"
-            android:textColor="#CCFFFFFF"
-            android:fontFamily="serif"
-            android:letterSpacing="0.2"
-            android:layout_marginTop="8dp"/>
-
-        <!-- Barra de carga -->
-        <ProgressBar
-            android:id="@+id/splash_progress"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="200dp"
-            android:layout_height="6dp"
-            android:layout_marginTop="40dp"
-            android:progressTint="@color/dorado"
-            android:progressBackgroundTint="#33FFFFFF"
-            android:indeterminate="true"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CARGANDO"
-            android:textSize="10sp"
-            android:textColor="#99FFFFFF"
-            android:fontFamily="serif"
-            android:letterSpacing="0.3"
-            android:layout_marginTop="8dp"/>
-
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>
