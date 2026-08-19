@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SportingCristal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/celeste_sc</item>
+        <item name="colorPrimaryVariant">@color/celeste_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/dorado</item>
+        <item name="colorOnSecondary">@color/navy</item>
+        <item name="android:windowBackground">@color/celeste_sc</item>
+        <item name="android:statusBarColor">@color/celeste_dark</item>
+        <item name="android:navigationBarColor">@color/navy</item>
+    </style>
+
+    <style name="Theme.SportingCristal.Splash" parent="Theme.SportingCristal">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/celeste_sc</item>
+    </style>
+</resources>

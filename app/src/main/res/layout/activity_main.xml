@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/celeste_sc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★   ★   ★"
+            android:textSize="28sp"
+            android:textColor="@color/dorado"
+            android:layout_marginTop="40dp"
+            android:shadowColor="#7a5c00"
+            android:shadowDx="2" android:shadowDy="2" android:shadowRadius="3"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/escudo_sc"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="16dp"
+            android:elevation="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPORTING CRISTAL"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dorado"
+            android:fontFamily="serif"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#7a5c00"
+            android:shadowDx="2" android:shadowDy="2" android:shadowRadius="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LA RAZA CELESTE"
+            android:textSize="13sp"
+            android:textColor="#CCFFFFFF"
+            android:fontFamily="serif"
+            android:letterSpacing="0.2"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Separador -->
+        <View android:layout_width="200dp" android:layout_height="2dp"
+            android:background="@color/dorado" android:layout_marginBottom="32dp"/>
+
+        <!-- Botón aplicar wallpaper -->
+        <Button
+            android:id="@+id/btn_wallpaper"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="⚽  APLICAR FONDO DE PANTALLA"
+            android:textColor="@color/navy"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:backgroundTint="@color/dorado"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"/>
+
+        <!-- Botón ver pantallas -->
+        <Button
+            android:id="@+id/btn_screens"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="🖼  CAMBIAR WALLPAPERS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:backgroundTint="@color/celeste_dark"
+            android:layout_marginBottom="32dp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIMA · PERÚ · DESDE 1955"
+            android:textSize="11sp"
+            android:textColor="#88FFFFFF"
+            android:fontFamily="serif"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

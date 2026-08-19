@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="celeste_sc">#00AEEF</color>
+    <color name="celeste_dark">#0089C4</color>
+    <color name="celeste_light">#7DD6F4</color>
+    <color name="dorado">#FFD700</color>
+    <color name="dorado_dark">#C8900A</color>
+    <color name="rojo_sc">#CC0000</color>
+    <color name="navy">#003A5C</color>
+    <color name="white">#FFFFFF</color>
+</resources>
